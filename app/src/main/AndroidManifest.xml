@@ -30,6 +30,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".LectorActivity"></activity>
+        <activity android:name=".FotoActivity"></activity>
     </application>
 
 </manifest>

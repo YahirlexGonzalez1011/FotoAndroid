@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -8,58 +9,85 @@
         android:id="@+id/txtTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="53dp"
         android:text="@string/titulo1"
         android:textColor="#392395"
         android:textSize="34sp"
-        tools:layout_editor_absoluteX="52dp"
-        tools:layout_editor_absoluteY="76dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btnScan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btnScan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="17dp"
         android:onClick="escanearCodigoBarras"
         android:text="@string/escanear"
-        tools:layout_editor_absoluteX="138dp"
-        tools:layout_editor_absoluteY="145dp" />
+        app:layout_constraintBottom_toTopOf="@+id/edtResultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
 
     <EditText
         android:id="@+id/edtResultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="48dp"
         android:contentDescription="@string/res"
         android:ems="10"
         android:hint="@string/res"
         android:inputType="text"
         android:text="@string/res"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="221dp" />
+        app:layout_constraintBottom_toTopOf="@+id/edtDescripcion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnScan" />
 
     <EditText
         android:id="@+id/edtDescripcion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="101dp"
         android:contentDescription="@string/descripcion"
         android:ems="10"
         android:hint="@string/descripcion"
         android:inputType="text"
         android:text="@string/descripcion"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="281dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtResultado" />
 
     <Button
         android:id="@+id/btnRegistrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="5dp"
         android:text="@string/capturar"
-        tools:layout_editor_absoluteX="81dp"
-        tools:layout_editor_absoluteY="349dp" />
+        app:layout_constraintEnd_toStartOf="@+id/btnLimpiar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtDescripcion" />
 
     <Button
         android:id="@+id/btnLimpiar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="52dp"
         android:text="@string/limpiar"
-        tools:layout_editor_absoluteX="228dp"
-        tools:layout_editor_absoluteY="349dp" />
+        app:layout_constraintStart_toEndOf="@+id/btnRegistrar"
+        app:layout_constraintTop_toBottomOf="@+id/edtDescripcion" />
 </androidx.constraintlayout.widget.ConstraintLayout>

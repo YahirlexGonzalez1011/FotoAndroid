@@ -23,11 +23,11 @@
         android:id="@+id/btn_lector"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:text="Abrir Lector"
+        android:layout_marginTop="140dp"
         android:onClick="lector"
+        android:text="Abrir Lector"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -36,13 +36,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
-        android:text="Abrir Cámara"
         android:onClick="camara"
+        android:text="Abrir Cámara"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_lector" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_lector"
+        app:layout_constraintVertical_bias="0.095" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
