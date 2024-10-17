@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo1"
+        android:textColor="#392395"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="76dp" />
+
+    <Button
+        android:id="@+id/btnScan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="escanearCodigoBarras"
+        android:text="@string/escanear"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="145dp" />
+
+    <EditText
+        android:id="@+id/edtResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/res"
+        android:ems="10"
+        android:hint="@string/res"
+        android:inputType="text"
+        android:text="@string/res"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="221dp" />
+
+    <EditText
+        android:id="@+id/edtDescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/descripcion"
+        android:ems="10"
+        android:hint="@string/descripcion"
+        android:inputType="text"
+        android:text="@string/descripcion"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="281dp" />
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/capturar"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="349dp" />
+
+    <Button
+        android:id="@+id/btnLimpiar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/limpiar"
+        tools:layout_editor_absoluteX="228dp"
+        tools:layout_editor_absoluteY="349dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
